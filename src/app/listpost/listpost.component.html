@@ -1,0 +1,20 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h4><a routerLink="/addPost">Nouveau post</a></h4>
+      <h2>Posts </h2>
+      <ul class="list-group">
+        <app-post   *ngFor="let postj of posts; let p index"
+                    [postj]="postj"
+                    [indexP]="p"
+                    [titlep]="postj.title"
+                    [content]="postj.content"
+                    [id]="postj.id"
+                    [loveits]="postj.loveIts">
+        </app-post>
+      </ul>
+    </div>
+  </div>
+</div>

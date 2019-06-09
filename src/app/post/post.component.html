@@ -1,0 +1,19 @@
+
+
+  <li class="list-group-item" style="list-style-type:none" [class]="loveit(indexP)" >
+
+    <div   class="navbar-right" >
+      <p style="color: black">{{createdAt | date :'dd/MM/yyyy, hh:mm a'}} </p>
+    </div>
+
+    <h3>{{titlep}} </h3>
+    <p>{{content }}</p>
+     <button class="btn btn-success" (click)="onLoveIt(id)">i love it </button>
+      <button class="btn btn-danger" (click)="onDontLoveIt(id)" >i don't love it </button>
+      <button class="btn btn-primary navbar-right" (click)="ondelete(postj)">supprimer</button>
+  </li>
+
+
+
+
+
